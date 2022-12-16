@@ -18,10 +18,10 @@ export async function getServerSideProps({ locale }) {
 	};
 }
 
-function Pricing() {
+function Pricing({ localeTexts }) {
 	return (
 		<div className={styles.pricing}>
-			<h1 className="pageHeadline">Pricing</h1>
+			<h1 className="pageHeadline">{localeTexts?.pricing?.headline}</h1>
 		</div>
 	);
 }

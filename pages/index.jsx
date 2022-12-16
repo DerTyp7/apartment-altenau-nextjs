@@ -43,25 +43,25 @@ export default function Home({ localeTexts }) {
 				<ul>
 					<Link href={"/surroundings"}>
 						<FontAwesomeIcon icon={faBreadSlice} />
-						Backeries
+						{localeTexts?.home?.surroundings?.backeries}
 					</Link>
 
 					<Link href={"/surroundings"}>
 						<FontAwesomeIcon icon={faUtensils} />
-						Amenities
+						{localeTexts?.home?.surroundings?.amenities}
 					</Link>
 					<Link href={"/surroundings"}>
 						<FontAwesomeIcon icon={faBeer} />
-						Brewery
+						{localeTexts?.home?.surroundings?.brewery}
 					</Link>
 
 					<Link href={"/surroundings"}>
 						<FontAwesomeIcon icon={faSeedling} />
-						Kräuterpark
+						{localeTexts?.home?.surroundings?.kraeuterpark}
 					</Link>
 					<Link href={"/surroundings"}>
 						<FontAwesomeIcon icon={faSpa} />
-						Spa park
+						{localeTexts?.home?.surroundings?.spaPark}
 					</Link>
 				</ul>
 			</div>

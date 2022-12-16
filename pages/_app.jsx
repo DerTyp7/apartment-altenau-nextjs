@@ -1,5 +1,6 @@
 import "../styles/variables.scss";
 import "../styles/globals.scss";
+import "../styles/LegalAndPrivacy.scss";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
