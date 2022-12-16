@@ -2,20 +2,7 @@ import "../styles/Map.module.scss";
 
 function Map({ width = "100%", height = "100%", showAddressText }) {
 	return (
-		<div
-			className="map"
-			style={
-				typeof window !== "undefined"
-					? {
-							width: width > window.innerWidth ?? "100%",
-							height: height > window.innerHeight ?? "100%",
-					  }
-					: {
-							width: "100%",
-							height: "100%",
-					  }
-			}
-		>
+		<div className="map" style={{ width: "100%", height: "100%" }}>
 			<iframe
 				id="googleMap"
 				title="Google Maps"
@@ -23,9 +10,7 @@ function Map({ width = "100%", height = "100%", showAddressText }) {
 				style={{ border: "0" }}
 				width={width}
 				height={height}
-				allowfullscreen="true"
 				loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"
 			></iframe>
 			{showAddressText ? (
 				<a
