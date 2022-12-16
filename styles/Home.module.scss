@@ -1,0 +1,122 @@
+@import "./variables.scss";
+
+.home {
+	/* Children */
+	.homeSurroundings {
+		background-color: $home-surroundings-background-color;
+		font-size: $home-surroundings-font-size;
+		font-weight: bold;
+		color: $home-surroundings-font-color;
+
+		/* Children */
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			list-style: none;
+			padding: 10px 0px 10px 0px;
+			margin: 0 auto 0 auto;
+			padding-inline: 10px;
+
+			/* Media queries */
+			@media (min-width: 1050px) {
+				padding-inline: 80px;
+			}
+
+			/* Children */
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: color 50ms ease-in-out;
+				padding: 0 0 3px 0;
+				transition: 50ms;
+				transition-timing-function: linear;
+				cursor: pointer;
+
+				&:visited {
+					color: $home-surroundings-font-color;
+				}
+
+				/* Media queries */
+				@media (max-width: 650px) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+
+				/* Children */
+				svg {
+					width: $home-surroundings-font-size;
+					aspect-ratio: 1;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	.homeGrid {
+		display: grid;
+		grid-template-columns: 1fr 0.5fr;
+		margin: 2em 0 0 0;
+		padding: 0 2.5em 0 2.5em;
+
+		/* Media queries */
+		@media screen and (max-width: $home-grid-breakpoint-1) {
+			padding-left: 10px;
+			padding-right: 10px;
+			grid-template-columns: 1fr;
+		}
+
+		/* Children */
+		div {
+			display: block;
+			width: 100%;
+			margin: 0 auto 0 auto;
+
+			/* Children */
+			h2 {
+				margin-top: 10px;
+				padding-bottom: 10px;
+				letter-spacing: 3px;
+				/* Media queries */
+				@media screen and (max-width: $home-grid-breakpoint-1) {
+					text-align: center;
+				}
+			}
+		}
+
+		.homeIntroduction p {
+			font-size: 1.3em;
+			line-height: 2em;
+
+			/* Media queries */
+			@media screen and (max-width: $home-grid-breakpoint-1) {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+			@media screen and (max-width: $home-grid-breakpoint-2) {
+				text-align: center;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			@media screen and (max-width: $home-grid-breakpoint-3) {
+				font-size: 13pt;
+			}
+
+			@media screen and (max-width: $home-grid-breakpoint-4) {
+				font-size: 13pt;
+				text-align: center;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+
+		.homeMapContainer {
+			width: 90%;
+		}
+	}
+}

@@ -1,0 +1,108 @@
+@import "./variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+
+	/* Scrollbar FireFox*/
+	scrollbar-width: $scrollbar-width;
+	scrollbar-color: $scrollbar-foreground-color $scrollbar-background-color;
+
+	&:visited {
+		text-decoration: none;
+	}
+}
+
+/* Scrollbar Webkit */
+*::-webkit-scrollbar {
+	width: $scrollbar-width;
+}
+
+*::-webkit-scrollbar-track {
+	background: $scrollbar-background-color;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: $scrollbar-foreground-color;
+	border-radius: 10px;
+	border: 3px solid transparent;
+}
+
+body,
+html {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 100%;
+	text-align: left;
+	color: $text-color;
+}
+
+#__next {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	main {
+		width: 100%;
+		flex: 1;
+	}
+}
+
+p,
+a {
+	letter-spacing: 1px;
+	&:visited {
+		color: $text-color;
+	}
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(34, 148, 255);
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: rgb(34, 148, 255);
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $text-headline-color;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.textMuted {
+	color: $text-muted;
+}
+
+.pageHeadline {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.noSelect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

@@ -1,0 +1,168 @@
+@import "./variables.scss";
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 $navbar-padding-right 0 $navbar-padding-left;
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+	height: $navbar-height;
+	background-color: $navbar-background-color;
+	color: $navbar-color;
+	font-size: $navbar-font-size;
+
+	/* Media queries */
+	@media screen and (max-width: $navbar-breakpoint-1) {
+		padding: 0 10px 0 10px;
+	}
+
+	@media screen and (max-width: $navbar-breakpoint-2) {
+		flex-direction: column;
+		padding: 0 0 5px 0;
+	}
+
+	@media screen and (max-width: $navbar-breakpoint-4) {
+		padding: 0 0 20px 0;
+	}
+	@media screen and (max-width: $navbar-breakpoint-5) {
+		padding: 0 0 45px 0;
+	}
+
+	/* Children */
+	* {
+		letter-spacing: 0px;
+	}
+
+	.brandName {
+		font-size: $navbar-brand-font-size;
+		color: $navbar-brand-color;
+		text-decoration: $navbar-brand-text-decoration;
+		padding: 0 0 0 15px;
+		margin: -4px 0 0 0;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		/* Media queries */
+		@media screen and (max-width: $navbar-breakpoint-2) {
+			font-size: calc($navbar-brand-font-size - 0.5rem);
+		}
+
+		@media screen and (max-width: $navbar-breakpoint-2) {
+			padding: 15px 0 0 0;
+		}
+	}
+
+	.navNavigationLeft {
+		align-items: baseline;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		margin: 0 auto 0 20px;
+
+		/* Media queries */
+		@media screen and (max-width: $navbar-breakpoint-2) {
+			justify-content: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/* Children */
+		li {
+			padding-inline: 1rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		a {
+			padding-inline: 0.8rem;
+			margin-inline: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $navbar-navigation-color;
+			text-decoration: none;
+			transition: color 50ms ease-in-out;
+			border-radius: $navbar-navigation-border-radius;
+			font-weight: bold;
+			font-size: 12pt;
+			transition: 50ms;
+			transition-timing-function: linear;
+			border-bottom: 3px solid transparent;
+
+			@media (max-width: $navbar-breakpoint-3) {
+				padding-inline: 0.2rem;
+				margin-inline: 2px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			&:hover {
+				color: $navbar-navigation-color-active;
+				background-color: $navbar-navigation-active-background-color-hover;
+			}
+		}
+
+		.active {
+			background-color: $navbar-navigation-active-background-color;
+			border-bottom: 3px solid $navbar-navigation-active-border-color;
+			border-radius: $navbar-navigation-border-radius;
+			color: $navbar-navigation-color-active;
+
+			&:hover {
+				color: $navbar-navigation-color-active;
+				background-color: $navbar-navigation-active-background-color;
+			}
+		}
+	}
+	.navNavigationRight {
+		align-items: center;
+		justify-content: center;
+		column-gap: 10px;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding: 0;
+		margin-right: auto;
+		margin-right: 20px;
+
+		.btnContact {
+			border: 1px solid #2176ff;
+			background-color: #2176ff;
+			color: white;
+			font-weight: bold;
+			border-radius: 5px;
+			padding: 8px;
+			cursor: pointer;
+			&:hover {
+				transition: 100ms linear;
+				background-color: #0568d2;
+			}
+
+			@media (max-width: $navbar-breakpoint-2) {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+			}
+
+			@media (max-width: $navbar-breakpoint-4) {
+				padding: 5px;
+			}
+		}
+
+		.navSelectContainer {
+			caret-color: transparent;
+			@media (max-width: $navbar-breakpoint-2) {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+			}
+		}
+	}
+}

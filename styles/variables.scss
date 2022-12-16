@@ -1,0 +1,53 @@
+// General
+$text-muted: #54585a;
+$text-color: #555555;
+$text-headline-color: #000000;
+
+// Scrollbar styling
+$scrollbar-background-color: rgb(195, 195, 195);
+$scrollbar-foreground-color: rgb(44, 48, 50);
+$scrollbar-width: 10px;
+
+// Navbar styling (nav.scss)
+$navbar-height: 75px;
+$navbar-padding-left: 60px;
+$navbar-padding-right: $navbar-padding-left;
+$navbar-background-color: #f9f9f9;
+$navbar-color: rgb(29, 29, 29);
+$navbar-navigation-color: #424242;
+$navbar-navigation-color-active: #000000;
+$navbar-navigation-active-background-color: #d0cfcf;
+$navbar-navigation-active-border-color: #00000000;
+$navbar-navigation-active-background-color-hover: #e5e5e5;
+$navbar-navigation-border-radius: 50px;
+
+$navbar-font-size: 1.15rem;
+$navbar-brand-font-size: 1.8rem;
+$navbar-brand-color: rgb(12, 12, 12);
+$navbar-brand-text-decoration: none;
+
+$navbar-breakpoint-1: 1100px;
+$navbar-breakpoint-2: 910px;
+$navbar-breakpoint-3: 510px;
+$navbar-breakpoint-4: 480px;
+$navbar-breakpoint-5: 250px;
+
+// Footer styling (Footer.scss)
+$footer-color: #edebeb;
+$footer-link-color: #6c6c6c;
+$footer-link-color-hover: #000000;
+
+// Home styling
+$home-surroundings-background-color: #1f294c;
+$home-surroundings-font-size: 1.2em;
+$home-surroundings-font-color: #fff;
+
+$home-grid-breakpoint-1: 1250px;
+$home-grid-breakpoint-2: 900px;
+$home-grid-breakpoint-3: 730px;
+$home-grid-breakpoint-4: 400px;
+
+// Surroundings sytling
+$surroundings-breakpoint-1: 1200px;
+$surroundings-breakpoint-2: 950px;
+$surroundings-breakpoint-3: 750px;

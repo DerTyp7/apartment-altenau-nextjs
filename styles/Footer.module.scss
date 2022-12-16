@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+.footer {
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $footer-color;
+
+	.footerLinks {
+		align-items: baseline;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		list-style: none;
+
+		a {
+			color: $footer-link-color;
+			padding-inline: 1rem;
+			cursor: pointer;
+			transition: 50ms linear;
+			text-decoration: none;
+			@media (max-width: 400px) {
+				padding-bottom: 5px;
+			}
+			&:visited {
+				color: $footer-link-color;
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: underline;
+				color: $footer-link-color-hover;
+			}
+		}
+	}
+
+	.copyrightText {
+		color: $footer-link-color;
+		padding-right: 10px;
+	}
+}

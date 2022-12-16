@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+.surroundings {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 50px 0 50px;
+
+	/* Media queries */
+	@media screen and (max-width: $surroundings-breakpoint-2) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Children */
+	.surroundingsItem {
+		display: block;
+		padding: 0px 0px 10px 0px;
+		margin: 0 0 20px 0;
+		border-bottom: 3px solid #5555558e;
+		font-size: 15pt;
+		text-align: left;
+		line-height: 2em;
+		color: #555555;
+
+		.surroundingsItemImgContainer {
+			width: 500px;
+			float: left;
+
+			/* Media queries */
+			@media screen and (max-width: $surroundings-breakpoint-1) {
+				display: block;
+				font-size: 13pt;
+				text-align: center;
+			}
+
+			@media screen and (max-width: $surroundings-breakpoint-2) {
+				width: 100% !important;
+			}
+
+			@media screen and (min-width: $surroundings-breakpoint-2) {
+				padding-right: 20px;
+				padding-left: 20px;
+			}
+
+			@media screen and (max-width: $surroundings-breakpoint-3) {
+				padding-right: 0px;
+				padding-left: 0px;
+			}
+
+			/* Children */
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			a {
+				font-size: 11pt;
+				padding-left: 10px;
+				user-select: none;
+			}
+		}
+
+		h4 {
+			padding-left: 20px;
+
+			/* Media queries */
+			@media screen and (max-width: $surroundings-breakpoint-1) {
+				text-align: center;
+			}
+		}
+	}
+}

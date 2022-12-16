@@ -1,0 +1,16 @@
+.map {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    flex: 1;
+    float: right;
+    width: 100%;
+    text-align: right;
+  }
+
+  #googleMap {
+    flex: 1;
+    aspect-ratio: 1;
+  }
+}
