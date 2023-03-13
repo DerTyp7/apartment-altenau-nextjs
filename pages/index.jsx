@@ -5,6 +5,11 @@ import Link from "next/link";
 import {
 	faBeer,
 	faBreadSlice,
+	faCity,
+	faHiking,
+	faHillRockslide,
+	faHouseChimney,
+	faMountain,
 	faSeedling,
 	faSpa,
 	faUtensils,
@@ -42,8 +47,8 @@ export default function Home({ localeTexts }) {
 			<div className={styles.homeSurroundings}>
 				<ul>
 					<Link href={"/surroundings"}>
-						<FontAwesomeIcon icon={faBreadSlice} />
-						{localeTexts?.home?.surroundings?.backeries}
+						<FontAwesomeIcon icon={faMountain} />
+						{localeTexts?.home?.surroundings?.brocken}
 					</Link>
 
 					<Link href={"/surroundings"}>
@@ -51,17 +56,17 @@ export default function Home({ localeTexts }) {
 						{localeTexts?.home?.surroundings?.amenities}
 					</Link>
 					<Link href={"/surroundings"}>
-						<FontAwesomeIcon icon={faBeer} />
-						{localeTexts?.home?.surroundings?.brewery}
+						<FontAwesomeIcon icon={faHouseChimney} />
+						{localeTexts?.home?.surroundings?.torfhaus}
+					</Link>
+					<Link href={"/surroundings"}>
+						<FontAwesomeIcon icon={faCity} />
+						{localeTexts?.home?.surroundings?.goslar}
 					</Link>
 
 					<Link href={"/surroundings"}>
-						<FontAwesomeIcon icon={faSeedling} />
-						{localeTexts?.home?.surroundings?.kraeuterpark}
-					</Link>
-					<Link href={"/surroundings"}>
-						<FontAwesomeIcon icon={faSpa} />
-						{localeTexts?.home?.surroundings?.spaPark}
+						<FontAwesomeIcon icon={faHiking} />
+						{localeTexts?.home?.surroundings?.hiking}
 					</Link>
 				</ul>
 			</div>
@@ -75,8 +80,14 @@ export default function Home({ localeTexts }) {
 						}}
 					></p>
 				</div>
-				<div className={styles.homeMapContainer}>
+				<div className={styles.homeSideContainer}>
 					<Map showAddressText />
+					<Image
+						src={"/images/grundriss.jpg"}
+						width={300}
+						height={500}
+						alt="Grundriss"
+					/>
 				</div>
 			</div>
 		</div>

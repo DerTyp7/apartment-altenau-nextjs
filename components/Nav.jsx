@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 export default function Nav({ localeTexts }) {
 	const router = useRouter();
 	const currentRoute = router.pathname;
-
 	return (
 		<nav className={styles.nav}>
 			<h2
@@ -16,7 +15,6 @@ export default function Nav({ localeTexts }) {
 				}}
 			>
 				{localeTexts?.nav?.brandName ?? ""}
-				{router.locale}
 			</h2>
 
 			<ul className={styles.navNavigationLeft}>
@@ -36,7 +34,7 @@ export default function Nav({ localeTexts }) {
 					href="/furnishing"
 					className={currentRoute === "/furnishing" ? `${styles.active}` : ""}
 				>
-					{localeTexts?.nav?.furnishing ?? ""}
+					{localeTexts?.nav?.furnishings ?? ""}
 				</Link>
 
 				<Link

@@ -44,7 +44,7 @@ export default function Furnishing({ furnishings, localeTexts }) {
 								alt={locale === "en" ? s.title.en : s.title.de}
 							/>
 							<div>
-								{s.links.map((l, i2) => {
+								{s.links?.map((l, i2) => {
 									return (
 										<a key={i2} href={l.url}>
 											{locale === "en" ? l.text.en : l.text.de}

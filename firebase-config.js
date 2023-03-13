@@ -2,13 +2,13 @@ import { getFirestore } from "@firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDWzRRpiAd9UESS_DwhoiKKcvqPgDowQ28",
-	authDomain: "react-apartment-364115.firebaseapp.com",
-	projectId: "react-apartment-364115",
-	storageBucket: "react-apartment-364115.appspot.com",
-	messagingSenderId: "460150243441",
-	appId: "1:460150243441:web:2e19e848bbcf710a839bd0",
-	measurementId: "G-LVH2RF0ENW",
+	apiKey: "AIzaSyBpj2FZEONb_Qpca4-brCzB0OVJPf3l8hk",
+	authDomain: "apartment-f960a.firebaseapp.com",
+	projectId: "apartment-f960a",
+	storageBucket: "apartment-f960a.appspot.com",
+	messagingSenderId: "1007134515151",
+	appId: "1:1007134515151:web:9ff0216c618b55a571bcba",
+	measurementId: "G-RMSZVM1BCG",
 };
 
 const app = initializeApp(firebaseConfig);
