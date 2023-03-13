@@ -33,10 +33,10 @@ export default function Nav({ localeTexts }) {
 					{localeTexts?.nav?.surroundings ?? ""}
 				</Link>
 				<Link
-					href="/gallery"
-					className={currentRoute === "/gallery" ? `${styles.active}` : ""}
+					href="/furnishing"
+					className={currentRoute === "/furnishing" ? `${styles.active}` : ""}
 				>
-					{localeTexts?.nav?.gallery ?? ""}
+					{localeTexts?.nav?.furnishing ?? ""}
 				</Link>
 
 				<Link
