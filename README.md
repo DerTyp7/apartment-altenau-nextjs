@@ -6,3 +6,13 @@ This app functions as a flyer for the apartment in Altenau. It has no booking fu
 
 We use Firebase for the backend. The app is configured to use the Firebase project `altenau-apartment`.  
 Texts based on languages are stored in the `localeTexts` collection. Since NextJS caches the HTML file its not bad to always fetch the texts from the database.
+
+## .env file
+
+FIREBASE_API_KEY=""
+FIREBASE_AUTH_DOMAIN=""
+FIREBASE_PROJECT_ID=""
+FIREBASE_STORAGE_BUCKET=""
+FIREBASE_MESSAGING_SENDER_ID=""
+FIREBASE_APP_ID=""
+FIREBASE_MEASUREMENT_ID=""
