@@ -13,7 +13,7 @@ function DiashowHomePage(props) {
 	useEffect(() => {
 		async function getImages() {
 			const data = await getDocs(diashowImagesCollectionRef);
-
+			console.log(data);
 			const urls = [];
 			data.docs.forEach((doc) => {
 				urls.push(doc.data().url);
@@ -32,6 +32,7 @@ function DiashowHomePage(props) {
 
 	return (
 		<div className="diashow-div">
+			{console.log(imageSrc)}
 			{imageSrc?.length > 0 ? (
 				<SimpleImageSlider
 					width={"100%"}
